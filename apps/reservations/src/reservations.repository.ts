@@ -5,7 +5,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 
 @Injectable()
-export abstract class ReservationsRepostiory extends AbstractRepository<ReservationDocument> {
+export class ReservationsRepostiory extends AbstractRepository<ReservationDocument> {
   protected readonly logger = new Logger(ReservationsRepostiory.name);
 
   constructor(
